@@ -53,12 +53,22 @@ btnZero.addEventListener("click",()=>{
         AIBox.setAttribute("src", "thumb.png")
     }
 
-    if(randomAIrun === 0){
-        runUpdate.textContent = `OUT`
+    if(targetScore === undefined){
+        if(randomAIrun === 0){
+            runUpdate.textContent = `OUT`
+        }else{
+            sumOfRun += 0
+            runUpdate.textContent = `Scored 0`
+            score.textContent = `${sumOfRun}`
+        }
     }else{
-        sumOfRun += 0
-        runUpdate.textContent = `Scored 0`
-        score.textContent = `${sumOfRun}`
+        if(randomAIrun === 0){
+            runUpdate.textContent = `OUT`
+        }else{
+            sumOfRun += randomAIrun
+            runUpdate.textContent = `Scored ${randomAIrun}`
+            score.textContent = `${sumOfRun}`
+        }    
     }
 
     if(targetScore === undefined){
@@ -137,12 +147,22 @@ btnOne.addEventListener("click",()=>{
         AIBox.setAttribute("src", "thumb.png")
     }
 
-    if(randomAIrun === 1){
-        runUpdate.textContent = `OUT`
+    if(targetScore === undefined){
+        if(randomAIrun === 1){
+            runUpdate.textContent = `OUT`
+        }else{
+            sumOfRun += 1
+            runUpdate.textContent = `Scored 1`
+            score.textContent = `${sumOfRun}`
+        }
     }else{
-        sumOfRun += 1
-        runUpdate.textContent = `Scored 1`
-        score.textContent = `${sumOfRun}`
+        if(randomAIrun === 1){
+            runUpdate.textContent = `OUT`
+        }else{
+            sumOfRun += randomAIrun
+            runUpdate.textContent = `Scored ${randomAIrun}`
+            score.textContent = `${sumOfRun}`
+        }    
     }
 
     if(targetScore === undefined){
@@ -221,12 +241,22 @@ btnTwo.addEventListener("click",()=>{
         AIBox.setAttribute("src", "thumb.png")
     }
 
-    if(randomAIrun === 2){
-        runUpdate.textContent = `OUT`
+    if(targetScore === undefined){
+        if(randomAIrun === 2){
+            runUpdate.textContent = `OUT`
+        }else{
+            sumOfRun += 2
+            runUpdate.textContent = `Scored 2`
+            score.textContent = `${sumOfRun}`
+        }
     }else{
-        sumOfRun += 2
-        runUpdate.textContent = `Scored 2`
-        score.textContent = `${sumOfRun}`
+        if(randomAIrun === 2){
+            runUpdate.textContent = `OUT`
+        }else{
+            sumOfRun += randomAIrun
+            runUpdate.textContent = `Scored ${randomAIrun}`
+            score.textContent = `${sumOfRun}`
+        }    
     }
 
     if(targetScore === undefined){
@@ -305,12 +335,22 @@ btnThree.addEventListener("click",()=>{
         AIBox.setAttribute("src", "thumb.png")
     }
 
-    if(randomAIrun === 3){
-        runUpdate.textContent = `OUT`
+    if(targetScore === undefined){
+        if(randomAIrun === 3){
+            runUpdate.textContent = `OUT`
+        }else{
+            sumOfRun += 3
+            runUpdate.textContent = `Scored 3`
+            score.textContent = `${sumOfRun}`
+        }
     }else{
-        sumOfRun += 3
-        runUpdate.textContent = `Scored 3`
-        score.textContent = `${sumOfRun}`
+        if(randomAIrun === 3){
+            runUpdate.textContent = `OUT`
+        }else{
+            sumOfRun += randomAIrun
+            runUpdate.textContent = `Scored ${randomAIrun}`
+            score.textContent = `${sumOfRun}`
+        }    
     }
 
     if(targetScore === undefined){
@@ -389,12 +429,22 @@ btnFour.addEventListener("click",()=>{
         AIBox.setAttribute("src", "thumb.png")
     }
 
-    if(randomAIrun === 4){
-        runUpdate.textContent = `OUT`
+    if(targetScore === undefined){
+        if(randomAIrun === 4){
+            runUpdate.textContent = `OUT`
+        }else{
+            sumOfRun += 4
+            runUpdate.textContent = `Scored 4`
+            score.textContent = `${sumOfRun}`
+        }
     }else{
-        sumOfRun += 4
-        runUpdate.textContent = `Scored 4`
-        score.textContent = `${sumOfRun}`
+        if(randomAIrun === 4){
+            runUpdate.textContent = `OUT`
+        }else{
+            sumOfRun += randomAIrun
+            runUpdate.textContent = `Scored ${randomAIrun}`
+            score.textContent = `${sumOfRun}`
+        }    
     }
 
     if(targetScore === undefined){
@@ -473,12 +523,22 @@ btnFive.addEventListener("click",()=>{
         AIBox.setAttribute("src", "thumb.png")
     }
 
-    if(randomAIrun === 5){
-        runUpdate.textContent = `OUT`
+    if(targetScore === undefined){
+        if(randomAIrun === 5){
+            runUpdate.textContent = `OUT`
+        }else{
+            sumOfRun += 5
+            runUpdate.textContent = `Scored 5`
+            score.textContent = `${sumOfRun}`
+        }
     }else{
-        sumOfRun += 5
-        runUpdate.textContent = `Scored 5`
-        score.textContent = `${sumOfRun}`
+        if(randomAIrun === 5){
+            runUpdate.textContent = `OUT`
+        }else{
+            sumOfRun += randomAIrun
+            runUpdate.textContent = `Scored ${randomAIrun}`
+            score.textContent = `${sumOfRun}`
+        }    
     }
 
     if(targetScore === undefined){
@@ -557,12 +617,22 @@ btnSix.addEventListener("click",()=>{
         AIBox.setAttribute("src", "thumb.png")
     }
 
-    if(randomAIrun === 6){
-        runUpdate.textContent = `OUT`
+    if(targetScore === undefined){
+        if(randomAIrun === 6){
+            runUpdate.textContent = `OUT`
+        }else{
+            sumOfRun += 6
+            runUpdate.textContent = `Scored 6`
+            score.textContent = `${sumOfRun}`
+        }
     }else{
-        sumOfRun += 6
-        runUpdate.textContent = `Scored 6`
-        score.textContent = `${sumOfRun}`
+        if(randomAIrun === 6){
+            runUpdate.textContent = `OUT`
+        }else{
+            sumOfRun += randomAIrun
+            runUpdate.textContent = `Scored ${randomAIrun}`
+            score.textContent = `${sumOfRun}`
+        }    
     }
 
     if(targetScore === undefined){
