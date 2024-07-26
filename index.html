@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Content</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hand Cricket Game</h1>
+        <div class="choice">
+            <h2>what you want to do first?</h2>
+            <div class="choice-btn">
+                <button id="btnBat">Bat</button><button id="btnBowl">Bowl</button>
+            </div>
+        </div>
+        <div class="afterChoice">
+
+            <div id="battingOrBowling">
+                <p>Batting : <span id="firstBat">You</span></p>
+                <p>Bowling : <span id="firstBowl">AI</span></p>
+            </div>
+            <div class="playing">
+                <div class="AIs">
+                    <label for="">AI </label>
+                    <div class="AIScore"><img id="AIBox" src="" alt=""></div>
+                </div>
+                <p class="runUpdate">Game Start...</p>
+                <p class="innings"><span id="firstSecond">First</span> Inngins | <span id="whoBat">You</span> | Score : <span id="score">0</span><span id="target"></span></p>
+                <div class="your">
+                    <label for="">You </label>
+                    <div class="yourScore"><img id="yourBox" src="" alt=""></div>
+                </div>
+            </div>
+            <div class="yourRunChoice">
+                <button id="btnZero" class="btn2"><img src="fist.png" alt=""></button>
+                <button id="btnOne" class="btn2"><img src="one.png" alt=""></button>
+                <button id="btnTwo" class="btn2"><img src="two.png" alt=""></button>
+                <button id="btnThree" class="btn2"><img src="three.png" alt=""></button>
+                <button id="btnFour" class="btn2"><img src="four.png" alt=""></button>
+                <button id="btnFive" class="btn2"><img src="five.png" alt=""></button>
+                <button id="btnSix" class="btn2"><img src="thumb.png" alt=""></button>
+            </div>
+
+            <button id="btnStatus">New Game </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

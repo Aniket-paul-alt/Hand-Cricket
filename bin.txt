@@ -1,0 +1,2560 @@
+// btnBat.addEventListener("click", ()=>{
+//     firstBat.textContent = `You`
+//     firstBowl.textContent = `AI`
+//     choice.style.display = 'none'
+//     afterChoice.style.display = 'block'
+//     whoBat.textContent = `You`
+    
+
+//     if(firstBat.innerHTML === `You`){
+
+
+//         let sumOfRuns = 0;
+
+//         btnZero.addEventListener("click", ()=>{
+//             randomAIrun = Math.floor(Math.random()*11)
+//             yourBox.setAttribute("src", "fist.png")
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 AIBox.setAttribute("src", "fist.png")
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 AIBox.setAttribute("src", "one.png")
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 AIBox.setAttribute("src", "two.png")
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 AIBox.setAttribute("src", "three.png")
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 AIBox.setAttribute("src", "four.png")
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 AIBox.setAttribute("src", "five.png")
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 AIBox.setAttribute("src", "thumb.png")
+//             }
+
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 runUpdate.textContent = `OUT`
+//             }else{
+//                 sumOfRuns += 0
+//                 runUpdate.textContent = `Scored 0`
+//                 yourRun.textContent = `${sumOfRuns}`
+//             }
+
+//             setTimeout(() => {
+//                 yourBox.setAttribute("src", "")
+//                 AIBox.setAttribute("src", "")
+//                 if(randomAIrun >= 0 && randomAIrun < 1){
+//                     runUpdate.textContent = `Innings Break...`
+//                     target.textContent = ` | Target : ${sumOfRuns+1}`
+//                     yourRun.style.display = 'none'
+//                     whoBat.textContent = `AI`
+//                     firstSecond.textContent = `Second `
+//                     firstBat.textContent = `AI`
+//                     firstBowl.textContent = `You`
+//                 }else{
+//                     runUpdate.textContent = `Next Ball...`
+//                 }
+//             }, 3000);
+//         })
+//         btnOne.addEventListener("click", ()=>{
+//             yourBox.setAttribute("src", "one.png")
+//             randomAIrun = Math.floor(Math.random()*11)
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 AIBox.setAttribute("src", "fist.png")
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 AIBox.setAttribute("src", "one.png")
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 AIBox.setAttribute("src", "two.png")
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 AIBox.setAttribute("src", "three.png")
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 AIBox.setAttribute("src", "four.png")
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 AIBox.setAttribute("src", "five.png")
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 AIBox.setAttribute("src", "thumb.png")
+//             }
+
+//             if(randomAIrun >= 1 && randomAIrun < 2){
+//                 runUpdate.textContent = `OUT`
+//             }else{
+//                 sumOfRuns += 1
+//                 runUpdate.textContent = `Scored 1`
+//                 yourRun.textContent = `${sumOfRuns}`
+//             }
+
+//             setTimeout(() => {
+//                 yourBox.setAttribute("src", "")
+//                 AIBox.setAttribute("src", "")
+//                 if(randomAIrun >= 1 && randomAIrun < 2){
+//                     runUpdate.textContent = `Innings Break...`
+//                     target.textContent = ` | Target : ${sumOfRuns+1}`
+//                     yourRun.style.display = 'none'
+//                     whoBat.textContent = `AI`
+//                     firstSecond.textContent = `Second `
+//                     firstBat.textContent = `AI`
+//                     firstBowl.textContent = `You`
+//                 }else{
+//                     runUpdate.textContent = `Next Ball...`
+//                 }
+//             }, 3000);
+//         })
+//         btnTwo.addEventListener("click", ()=>{
+//             yourBox.setAttribute("src", "two.png")
+//             randomAIrun = Math.floor(Math.random()*11)
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 AIBox.setAttribute("src", "fist.png")
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 AIBox.setAttribute("src", "one.png")
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 AIBox.setAttribute("src", "two.png")
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 AIBox.setAttribute("src", "three.png")
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 AIBox.setAttribute("src", "four.png")
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 AIBox.setAttribute("src", "five.png")
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 AIBox.setAttribute("src", "thumb.png")
+//             }
+
+//             if(randomAIrun >= 2 && randomAIrun < 3){
+//                 runUpdate.textContent = `OUT`
+//             }else{
+//                 sumOfRuns += 2
+//                 runUpdate.textContent = `Scored 2`
+//                 yourRun.textContent = `${sumOfRuns}`
+//             }
+
+
+//             setTimeout(() => {
+//                 yourBox.setAttribute("src", "")
+//                 AIBox.setAttribute("src", "")
+//                 if(randomAIrun >= 2 && randomAIrun < 3){
+//                     runUpdate.textContent = `Innings Break...`
+//                     target.textContent = ` | Target : ${sumOfRuns+1}`
+//                     yourRun.style.display = 'none'
+//                     whoBat.textContent = `AI`
+//                     firstSecond.textContent = `Second `
+//                     firstBat.textContent = `AI`
+//                     firstBowl.textContent = `You`
+//                 }else{
+//                     runUpdate.textContent = `Next Ball...`
+//                 }
+//             }, 3000);
+//         })
+//         btnThree.addEventListener("click", ()=>{
+//             yourBox.setAttribute("src", "three.png")
+//             randomAIrun = Math.floor(Math.random()*11)
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 AIBox.setAttribute("src", "fist.png")
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 AIBox.setAttribute("src", "one.png")
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 AIBox.setAttribute("src", "two.png")
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 AIBox.setAttribute("src", "three.png")
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 AIBox.setAttribute("src", "four.png")
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 AIBox.setAttribute("src", "five.png")
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 AIBox.setAttribute("src", "thumb.png")
+//             }
+
+//             if(randomAIrun >= 3 && randomAIrun < 4){
+//                 runUpdate.textContent = `OUT`
+//             }else{
+//                 sumOfRuns += 3
+//                 runUpdate.textContent = `Scored 3`
+//                 yourRun.textContent = `${sumOfRuns}`
+//             }
+
+//             setTimeout(() => {
+//                 yourBox.setAttribute("src", "")
+//                 AIBox.setAttribute("src", "")
+//                 if(randomAIrun >= 3 && randomAIrun < 4){
+//                     runUpdate.textContent = `Innings Break...`
+//                     target.textContent = ` | Target : ${sumOfRuns+1}`
+//                     yourRun.style.display = 'none'
+//                     whoBat.textContent = `AI`
+//                     firstSecond.textContent = `Second `
+//                     firstBat.textContent = `AI`
+//                     firstBowl.textContent = `You`
+//                 }else{
+//                     runUpdate.textContent = `Next Ball...`
+//                 }
+//             }, 3000);
+//         })
+//         btnFour.addEventListener("click", ()=>{
+//             yourBox.setAttribute("src", "four.png")
+//             randomAIrun = Math.floor(Math.random()*11)
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 AIBox.setAttribute("src", "fist.png")
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 AIBox.setAttribute("src", "one.png")
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 AIBox.setAttribute("src", "two.png")
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 AIBox.setAttribute("src", "three.png")
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 AIBox.setAttribute("src", "four.png")
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 AIBox.setAttribute("src", "five.png")
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 AIBox.setAttribute("src", "thumb.png")
+//             }
+
+//             if(randomAIrun >= 4 && randomAIrun < 6){
+//                 runUpdate.textContent = `OUT`
+//             }else{
+//                 sumOfRuns += 4
+//                 runUpdate.textContent = `Scored 4`
+//                 yourRun.textContent = `${sumOfRuns}`
+//             }
+
+//             setTimeout(() => {
+//                 yourBox.setAttribute("src", "")
+//                 AIBox.setAttribute("src", "")
+//                 if(randomAIrun >= 4 && randomAIrun < 6){
+//                     runUpdate.textContent = `Innings Break...`
+//                     target.textContent = ` | Target : ${sumOfRuns+1}`
+//                     yourRun.style.display = 'none'
+//                     whoBat.textContent = `AI`
+//                     firstSecond.textContent = `Second `
+//                     firstBat.textContent = `AI`
+//                     firstBowl.textContent = `You`
+//                 }else{
+//                     runUpdate.textContent = `Next Ball...`
+//                 }
+//             }, 3000);
+//         })
+//         btnFive.addEventListener("click", ()=>{
+//             yourBox.setAttribute("src", "five.png")
+//             randomAIrun = Math.floor(Math.random()*11)
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 AIBox.setAttribute("src", "fist.png")
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 AIBox.setAttribute("src", "one.png")
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 AIBox.setAttribute("src", "two.png")
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 AIBox.setAttribute("src", "three.png")
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 AIBox.setAttribute("src", "four.png")
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 AIBox.setAttribute("src", "five.png")
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 AIBox.setAttribute("src", "thumb.png")
+//             }
+
+//             if(randomAIrun >= 6 && randomAIrun < 8){
+//                 runUpdate.textContent = `OUT`
+//             }else{
+//                 sumOfRuns += 5
+//                 runUpdate.textContent = `Scored 5`
+//                 yourRun.textContent = `${sumOfRuns}`
+//             }
+
+//             setTimeout(() => {
+//                 yourBox.setAttribute("src", "")
+//                 AIBox.setAttribute("src", "")
+//                 if(randomAIrun >= 6 && randomAIrun < 8){
+//                     runUpdate.textContent = `Innings Break...`
+//                     target.textContent = ` | Target : ${sumOfRuns+1}`
+//                     yourRun.style.display = 'none'
+//                     whoBat.textContent = `AI`
+//                     firstSecond.textContent = `Second `
+//                     firstBat.textContent = `AI`
+//                     firstBowl.textContent = `You`
+//                 }else{
+//                     runUpdate.textContent = `Next Ball...`
+//                 }
+//             }, 3000);
+//         })
+//         btnSix.addEventListener("click", ()=>{
+//             yourBox.setAttribute("src", "thumb.png")
+//             randomAIrun = Math.floor(Math.random()*11)
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 AIBox.setAttribute("src", "fist.png")
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 AIBox.setAttribute("src", "one.png")
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 AIBox.setAttribute("src", "two.png")
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 AIBox.setAttribute("src", "three.png")
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 AIBox.setAttribute("src", "four.png")
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 AIBox.setAttribute("src", "five.png")
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 AIBox.setAttribute("src", "thumb.png")
+//             }
+
+//             if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 runUpdate.textContent = `OUT`
+//             }else{
+//                 sumOfRuns += 6
+//                 runUpdate.textContent = `Scored 6`
+//                 yourRun.textContent = `${sumOfRuns}`
+//             }
+
+//             setTimeout(() => {
+//                 yourBox.setAttribute("src", "")
+//                 AIBox.setAttribute("src", "")
+//                 if(randomAIrun >= 8 && randomAIrun <= 10){
+//                     runUpdate.textContent = `Innings Break...`
+//                     target.textContent = ` | Target : ${sumOfRuns+1}`
+//                     yourRun.style.display = 'none'
+//                     whoBat.textContent = `AI`
+//                     firstSecond.textContent = `Second `
+//                     firstBat.textContent = `AI`
+//                     firstBowl.textContent = `You`
+//                 }else{
+//                     runUpdate.textContent = `Next Ball...`
+//                 }
+//             }, 3000);
+//         })
+//     }else{
+
+    
+
+//     let sumOfAIRuns = 0;
+
+//         btnZero.addEventListener("click", ()=>{
+//             randomAIrun = Math.floor(Math.random()*11)
+//             yourBox.setAttribute("src", "fist.png")
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 AIBox.setAttribute("src", "fist.png")
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 AIBox.setAttribute("src", "one.png")
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 AIBox.setAttribute("src", "two.png")
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 AIBox.setAttribute("src", "three.png")
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 AIBox.setAttribute("src", "four.png")
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 AIBox.setAttribute("src", "five.png")
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 AIBox.setAttribute("src", "thumb.png")
+//             }
+
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 runUpdate.textContent = `OUT`
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 sumOfAIRuns += 1
+//                 runUpdate.textContent = `Scored 1`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 sumOfAIRuns += 2
+//                 runUpdate.textContent = `Scored 2`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 sumOfAIRuns += 3
+//                 runUpdate.textContent = `Scored 3`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 sumOfAIRuns += 4
+//                 runUpdate.textContent = `Scored 4`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 sumOfAIRuns += 5
+//                 runUpdate.textContent = `Scored 5`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 sumOfAIRuns += 6
+//                 runUpdate.textContent = `Scored 6`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }
+
+//             setTimeout(() => {
+//                 yourBox.setAttribute("src", "")
+//                 AIBox.setAttribute("src", "")
+//                 if(randomAIrun >= 0 && randomAIrun < 1){
+//                     runUpdate.textContent = `Innings Break...`
+//                     target.textContent = ` | Target : ${sumOfAIRuns+1}`
+//                     AIRun.style.display = 'none'
+//                     whoBat.textContent = `You`
+//                     firstSecond.textContent = `Second `
+//                     firstBat.textContent = `You`
+//                     firstBowl.textContent = `AI`
+//                 }else{
+//                     runUpdate.textContent = `Next Ball...`
+//                 }
+//             }, 3000);
+//         })
+//         btnOne.addEventListener("click", ()=>{
+//             yourBox.setAttribute("src", "one.png")
+//             randomAIrun = Math.floor(Math.random()*11)
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 AIBox.setAttribute("src", "fist.png")
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 AIBox.setAttribute("src", "one.png")
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 AIBox.setAttribute("src", "two.png")
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 AIBox.setAttribute("src", "three.png")
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 AIBox.setAttribute("src", "four.png")
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 AIBox.setAttribute("src", "five.png")
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 AIBox.setAttribute("src", "thumb.png")
+//             }
+
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 sumOfAIRuns += 0
+//                 runUpdate.textContent = `Scored 0`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 runUpdate.textContent = `OUT`
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 sumOfAIRuns += 2
+//                 runUpdate.textContent = `Scored 2`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 sumOfAIRuns += 3
+//                 runUpdate.textContent = `Scored 3`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 sumOfAIRuns += 4
+//                 runUpdate.textContent = `Scored 4`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 sumOfAIRuns += 5
+//                 runUpdate.textContent = `Scored 5`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 sumOfAIRuns += 6
+//                 runUpdate.textContent = `Scored 6`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }
+
+//             setTimeout(() => {
+//                 yourBox.setAttribute("src", "")
+//                 AIBox.setAttribute("src", "")
+//                 if(randomAIrun >= 1 && randomAIrun < 2){
+//                     runUpdate.textContent = `Innings Break...`
+//                     target.textContent = ` | Target : ${sumOfAIRuns+1}`
+//                     AIRun.style.display = 'none'
+//                     whoBat.textContent = `You`
+//                     firstSecond.textContent = `Second `
+//                     firstBat.textContent = `You`
+//                     firstBowl.textContent = `AI`
+//                 }else{
+//                     runUpdate.textContent = `Next Ball...`
+//                 }
+//             }, 3000);
+//         })
+//         btnTwo.addEventListener("click", ()=>{
+//             yourBox.setAttribute("src", "two.png")
+//             randomAIrun = Math.floor(Math.random()*11)
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 AIBox.setAttribute("src", "fist.png")
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 AIBox.setAttribute("src", "one.png")
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 AIBox.setAttribute("src", "two.png")
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 AIBox.setAttribute("src", "three.png")
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 AIBox.setAttribute("src", "four.png")
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 AIBox.setAttribute("src", "five.png")
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 AIBox.setAttribute("src", "thumb.png")
+//             }
+
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 sumOfAIRuns += 0
+//                 runUpdate.textContent = `Scored 0`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 sumOfAIRuns += 1
+//                 runUpdate.textContent = `Scored 1`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 runUpdate.textContent = `OUT`
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 sumOfAIRuns += 3
+//                 runUpdate.textContent = `Scored 3`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 sumOfAIRuns += 4
+//                 runUpdate.textContent = `Scored 4`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 sumOfAIRuns += 5
+//                 runUpdate.textContent = `Scored 5`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 sumOfAIRuns += 6
+//                 runUpdate.textContent = `Scored 6`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }
+
+
+//             setTimeout(() => {
+//                 yourBox.setAttribute("src", "")
+//                 AIBox.setAttribute("src", "")
+//                 if(randomAIrun >= 2 && randomAIrun < 3){
+//                     runUpdate.textContent = `Innings Break...`
+//                     target.textContent = ` | Target : ${sumOfAIRuns+1}`
+//                     AIRun.style.display = 'none'
+//                     whoBat.textContent = `You`
+//                     firstSecond.textContent = `Second `
+//                     firstBat.textContent = `You`
+//                     firstBowl.textContent = `AI`
+//                 }else{
+//                     runUpdate.textContent = `Next Ball...`
+//                 }
+//             }, 3000);
+//         })
+//         btnThree.addEventListener("click", ()=>{
+//             yourBox.setAttribute("src", "three.png")
+//             randomAIrun = Math.floor(Math.random()*11)
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 AIBox.setAttribute("src", "fist.png")
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 AIBox.setAttribute("src", "one.png")
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 AIBox.setAttribute("src", "two.png")
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 AIBox.setAttribute("src", "three.png")
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 AIBox.setAttribute("src", "four.png")
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 AIBox.setAttribute("src", "five.png")
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 AIBox.setAttribute("src", "thumb.png")
+//             }
+
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 sumOfAIRuns += 0
+//                 runUpdate.textContent = `Scored 0`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 sumOfAIRuns += 1
+//                 runUpdate.textContent = `Scored 1`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 sumOfAIRuns += 2
+//                 runUpdate.textContent = `Scored 2`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 runUpdate.textContent = `OUT`
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 sumOfAIRuns += 4
+//                 runUpdate.textContent = `Scored 4`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 sumOfAIRuns += 5
+//                 runUpdate.textContent = `Scored 5`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 sumOfAIRuns += 6
+//                 runUpdate.textContent = `Scored 6`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }
+
+//             setTimeout(() => {
+//                 yourBox.setAttribute("src", "")
+//                 AIBox.setAttribute("src", "")
+//                 if(randomAIrun >= 3 && randomAIrun < 4){
+//                     runUpdate.textContent = `Innings Break...`
+//                     target.textContent = ` | Target : ${sumOfAIRuns+1}`
+//                     AIRun.style.display = 'none'
+//                     whoBat.textContent = `You`
+//                     firstSecond.textContent = `Second `
+//                     firstBat.textContent = `You`
+//                     firstBowl.textContent = `AI`
+//                 }else{
+//                     runUpdate.textContent = `Next Ball...`
+//                 }
+//             }, 3000);
+//         })
+//         btnFour.addEventListener("click", ()=>{
+//             yourBox.setAttribute("src", "four.png")
+//             randomAIrun = Math.floor(Math.random()*11)
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 AIBox.setAttribute("src", "fist.png")
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 AIBox.setAttribute("src", "one.png")
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 AIBox.setAttribute("src", "two.png")
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 AIBox.setAttribute("src", "three.png")
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 AIBox.setAttribute("src", "four.png")
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 AIBox.setAttribute("src", "five.png")
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 AIBox.setAttribute("src", "thumb.png")
+//             }
+
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 sumOfAIRuns += 0
+//                 runUpdate.textContent = `Scored 0`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 sumOfAIRuns += 1
+//                 runUpdate.textContent = `Scored 1`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 sumOfAIRuns += 2
+//                 runUpdate.textContent = `Scored 2`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 sumOfAIRuns += 3
+//                 runUpdate.textContent = `Scored 3`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 runUpdate.textContent = `OUT`
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 sumOfAIRuns += 5
+//                 runUpdate.textContent = `Scored 5`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 sumOfAIRuns += 6
+//                 runUpdate.textContent = `Scored 6`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }
+
+//             setTimeout(() => {
+//                 yourBox.setAttribute("src", "")
+//                 AIBox.setAttribute("src", "")
+//                 if(randomAIrun >= 4 && randomAIrun < 6){
+//                     runUpdate.textContent = `Innings Break...`
+//                     target.textContent = ` | Target : ${sumOfAIRuns+1}`
+//                     AIRun.style.display = 'none'
+//                     whoBat.textContent = `You`
+//                     firstSecond.textContent = `Second `
+//                     firstBat.textContent = `You`
+//                     firstBowl.textContent = `AI`
+//                 }else{
+//                     runUpdate.textContent = `Next Ball...`
+//                 }
+//             }, 3000);
+//         })
+//         btnFive.addEventListener("click", ()=>{
+//             yourBox.setAttribute("src", "five.png")
+//             randomAIrun = Math.floor(Math.random()*11)
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 AIBox.setAttribute("src", "fist.png")
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 AIBox.setAttribute("src", "one.png")
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 AIBox.setAttribute("src", "two.png")
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 AIBox.setAttribute("src", "three.png")
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 AIBox.setAttribute("src", "four.png")
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 AIBox.setAttribute("src", "five.png")
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 AIBox.setAttribute("src", "thumb.png")
+//             }
+
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 sumOfAIRuns += 0
+//                 runUpdate.textContent = `Scored 0`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 sumOfAIRuns += 1
+//                 runUpdate.textContent = `Scored 1`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 sumOfAIRuns += 2
+//                 runUpdate.textContent = `Scored 2`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 sumOfAIRuns += 3
+//                 runUpdate.textContent = `Scored 3`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 sumOfAIRuns += 4
+//                 runUpdate.textContent = `Scored 4`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 runUpdate.textContent = `OUT`
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 sumOfAIRuns += 6
+//                 runUpdate.textContent = `Scored 6`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }
+
+//             setTimeout(() => {
+//                 yourBox.setAttribute("src", "")
+//                 AIBox.setAttribute("src", "")
+//                 if(randomAIrun >= 6 && randomAIrun < 8){
+//                     runUpdate.textContent = `Innings Break...`
+//                     target.textContent = ` | Target : ${sumOfAIRuns+1}`
+//                     AIRun.style.display = 'none'
+//                     whoBat.textContent = `You`
+//                     firstSecond.textContent = `Second `
+//                     firstBat.textContent = `You`
+//                     firstBowl.textContent = `AI`
+//                 }else{
+//                     runUpdate.textContent = `Next Ball...`
+//                 }
+//             }, 3000);
+//         })
+//         btnSix.addEventListener("click", ()=>{
+//             yourBox.setAttribute("src", "thumb.png")
+//             randomAIrun = Math.floor(Math.random()*11)
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 AIBox.setAttribute("src", "fist.png")
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 AIBox.setAttribute("src", "one.png")
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 AIBox.setAttribute("src", "two.png")
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 AIBox.setAttribute("src", "three.png")
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 AIBox.setAttribute("src", "four.png")
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 AIBox.setAttribute("src", "five.png")
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 AIBox.setAttribute("src", "thumb.png")
+//             }
+
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 sumOfAIRuns += 0
+//                 runUpdate.textContent = `Scored 0`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 1 && randomAIrun < 2){
+//                 sumOfAIRuns += 1
+//                 runUpdate.textContent = `Scored 1`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 2 && randomAIrun < 3){
+//                 sumOfAIRuns += 2
+//                 runUpdate.textContent = `Scored 2`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 3 && randomAIrun < 4){
+//                 sumOfAIRuns += 3
+//                 runUpdate.textContent = `Scored 3`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 4 && randomAIrun < 6){
+//                 sumOfAIRuns += 4
+//                 runUpdate.textContent = `Scored 4`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 6 && randomAIrun < 8){
+//                 sumOfAIRuns += 5
+//                 runUpdate.textContent = `Scored 5`
+//                 AIRun.textContent = `${sumOfAIRuns}`
+//             }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 runUpdate.textContent = `OUT`
+//             }
+
+//             setTimeout(() => {
+//                 yourBox.setAttribute("src", "")
+//                 AIBox.setAttribute("src", "")
+//                 if(randomAIrun >= 8 && randomAIrun <= 10){
+//                     runUpdate.textContent = `Innings Break...`
+//                     target.textContent = ` | Target : ${sumOfAIRuns+1}`
+//                     AIRun.style.display = 'none'
+//                     whoBat.textContent = `You`
+//                     firstSecond.textContent = `Second `
+//                     firstBat.textContent = `You`
+//                     firstBowl.textContent = `AI`
+//                 }else{
+//                     runUpdate.textContent = `Next Ball...`
+//                 }
+//             }, 3000);
+//         })
+//     }
+
+// })
+
+// btnBowl.addEventListener("click", ()=>{
+//     firstBat.textContent = `AI`
+//     firstBowl.textContent = `You`
+//     choice.style.display = 'none'
+//     afterChoice.style.display = 'block'
+//     whoBat.textContent = `AI`
+
+    // if(firstBat.innerHTML === `AI`){
+
+    
+
+    //     let sumOfAIRuns = 0;
+
+    //     btnZero.addEventListener("click", ()=>{
+    //         randomAIrun = Math.floor(Math.random()*11)
+    //         yourBox.setAttribute("src", "fist.png")
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             AIBox.setAttribute("src", "fist.png")
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             AIBox.setAttribute("src", "one.png")
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             AIBox.setAttribute("src", "two.png")
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             AIBox.setAttribute("src", "three.png")
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             AIBox.setAttribute("src", "four.png")
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             AIBox.setAttribute("src", "five.png")
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             AIBox.setAttribute("src", "thumb.png")
+    //         }
+
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             runUpdate.textContent = `OUT`
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             sumOfAIRuns += 1
+    //             runUpdate.textContent = `Scored 1`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             sumOfAIRuns += 2
+    //             runUpdate.textContent = `Scored 2`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             sumOfAIRuns += 3
+    //             runUpdate.textContent = `Scored 3`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             sumOfAIRuns += 4
+    //             runUpdate.textContent = `Scored 4`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             sumOfAIRuns += 5
+    //             runUpdate.textContent = `Scored 5`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             sumOfAIRuns += 6
+    //             runUpdate.textContent = `Scored 6`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }
+
+    //         setTimeout(() => {
+    //             yourBox.setAttribute("src", "")
+    //             AIBox.setAttribute("src", "")
+    //             if(randomAIrun >= 0 && randomAIrun < 1){
+    //                 runUpdate.textContent = `Innings Break...`
+    //                 target.textContent = ` | Target : ${sumOfAIRuns+1}`
+    //                 AIRun.style.display = 'none'
+    //                 whoBat.textContent = `You`
+    //                 firstSecond.textContent = `Second `
+    //                 firstBat.textContent = `You`
+    //                 firstBowl.textContent = `AI`
+    //             }else{
+    //                 runUpdate.textContent = `Next Ball...`
+    //             }
+    //         }, 3000);
+    //     })
+    //     btnOne.addEventListener("click", ()=>{
+    //         yourBox.setAttribute("src", "one.png")
+    //         randomAIrun = Math.floor(Math.random()*11)
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             AIBox.setAttribute("src", "fist.png")
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             AIBox.setAttribute("src", "one.png")
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             AIBox.setAttribute("src", "two.png")
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             AIBox.setAttribute("src", "three.png")
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             AIBox.setAttribute("src", "four.png")
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             AIBox.setAttribute("src", "five.png")
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             AIBox.setAttribute("src", "thumb.png")
+    //         }
+
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             sumOfAIRuns += 0
+    //             runUpdate.textContent = `Scored 0`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             runUpdate.textContent = `OUT`
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             sumOfAIRuns += 2
+    //             runUpdate.textContent = `Scored 2`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             sumOfAIRuns += 3
+    //             runUpdate.textContent = `Scored 3`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             sumOfAIRuns += 4
+    //             runUpdate.textContent = `Scored 4`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             sumOfAIRuns += 5
+    //             runUpdate.textContent = `Scored 5`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             sumOfAIRuns += 6
+    //             runUpdate.textContent = `Scored 6`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }
+
+    //         setTimeout(() => {
+    //             yourBox.setAttribute("src", "")
+    //             AIBox.setAttribute("src", "")
+    //             if(randomAIrun >= 1 && randomAIrun < 2){
+    //                 runUpdate.textContent = `Innings Break...`
+    //                 target.textContent = ` | Target : ${sumOfAIRuns+1}`
+    //                 AIRun.style.display = 'none'
+    //                 whoBat.textContent = `You`
+    //                 firstSecond.textContent = `Second `
+    //                 firstBat.textContent = `You`
+    //                 firstBowl.textContent = `AI`
+    //             }else{
+    //                 runUpdate.textContent = `Next Ball...`
+    //             }
+    //         }, 3000);
+    //     })
+    //     btnTwo.addEventListener("click", ()=>{
+    //         yourBox.setAttribute("src", "two.png")
+    //         randomAIrun = Math.floor(Math.random()*11)
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             AIBox.setAttribute("src", "fist.png")
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             AIBox.setAttribute("src", "one.png")
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             AIBox.setAttribute("src", "two.png")
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             AIBox.setAttribute("src", "three.png")
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             AIBox.setAttribute("src", "four.png")
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             AIBox.setAttribute("src", "five.png")
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             AIBox.setAttribute("src", "thumb.png")
+    //         }
+
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             sumOfAIRuns += 0
+    //             runUpdate.textContent = `Scored 0`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             sumOfAIRuns += 1
+    //             runUpdate.textContent = `Scored 1`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             runUpdate.textContent = `OUT`
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             sumOfAIRuns += 3
+    //             runUpdate.textContent = `Scored 3`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             sumOfAIRuns += 4
+    //             runUpdate.textContent = `Scored 4`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             sumOfAIRuns += 5
+    //             runUpdate.textContent = `Scored 5`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             sumOfAIRuns += 6
+    //             runUpdate.textContent = `Scored 6`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }
+
+
+    //         setTimeout(() => {
+    //             yourBox.setAttribute("src", "")
+    //             AIBox.setAttribute("src", "")
+    //             if(randomAIrun >= 2 && randomAIrun < 3){
+    //                 runUpdate.textContent = `Innings Break...`
+    //                 target.textContent = ` | Target : ${sumOfAIRuns+1}`
+    //                 AIRun.style.display = 'none'
+    //                 whoBat.textContent = `You`
+    //                 firstSecond.textContent = `Second `
+    //                 firstBat.textContent = `You`
+    //                 firstBowl.textContent = `AI`
+    //             }else{
+    //                 runUpdate.textContent = `Next Ball...`
+    //             }
+    //         }, 3000);
+    //     })
+    //     btnThree.addEventListener("click", ()=>{
+    //         yourBox.setAttribute("src", "three.png")
+    //         randomAIrun = Math.floor(Math.random()*11)
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             AIBox.setAttribute("src", "fist.png")
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             AIBox.setAttribute("src", "one.png")
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             AIBox.setAttribute("src", "two.png")
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             AIBox.setAttribute("src", "three.png")
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             AIBox.setAttribute("src", "four.png")
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             AIBox.setAttribute("src", "five.png")
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             AIBox.setAttribute("src", "thumb.png")
+    //         }
+
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             sumOfAIRuns += 0
+    //             runUpdate.textContent = `Scored 0`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             sumOfAIRuns += 1
+    //             runUpdate.textContent = `Scored 1`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             sumOfAIRuns += 2
+    //             runUpdate.textContent = `Scored 2`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             runUpdate.textContent = `OUT`
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             sumOfAIRuns += 4
+    //             runUpdate.textContent = `Scored 4`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             sumOfAIRuns += 5
+    //             runUpdate.textContent = `Scored 5`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             sumOfAIRuns += 6
+    //             runUpdate.textContent = `Scored 6`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }
+
+    //         setTimeout(() => {
+    //             yourBox.setAttribute("src", "")
+    //             AIBox.setAttribute("src", "")
+    //             if(randomAIrun >= 3 && randomAIrun < 4){
+    //                 runUpdate.textContent = `Innings Break...`
+    //                 target.textContent = ` | Target : ${sumOfAIRuns+1}`
+    //                 AIRun.style.display = 'none'
+    //                 whoBat.textContent = `You`
+    //                 firstSecond.textContent = `Second `
+    //                 firstBat.textContent = `You`
+    //                 firstBowl.textContent = `AI`
+    //             }else{
+    //                 runUpdate.textContent = `Next Ball...`
+    //             }
+    //         }, 3000);
+    //     })
+    //     btnFour.addEventListener("click", ()=>{
+    //         yourBox.setAttribute("src", "four.png")
+    //         randomAIrun = Math.floor(Math.random()*11)
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             AIBox.setAttribute("src", "fist.png")
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             AIBox.setAttribute("src", "one.png")
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             AIBox.setAttribute("src", "two.png")
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             AIBox.setAttribute("src", "three.png")
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             AIBox.setAttribute("src", "four.png")
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             AIBox.setAttribute("src", "five.png")
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             AIBox.setAttribute("src", "thumb.png")
+    //         }
+
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             sumOfAIRuns += 0
+    //             runUpdate.textContent = `Scored 0`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             sumOfAIRuns += 1
+    //             runUpdate.textContent = `Scored 1`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             sumOfAIRuns += 2
+    //             runUpdate.textContent = `Scored 2`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             sumOfAIRuns += 3
+    //             runUpdate.textContent = `Scored 3`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             runUpdate.textContent = `OUT`
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             sumOfAIRuns += 5
+    //             runUpdate.textContent = `Scored 5`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             sumOfAIRuns += 6
+    //             runUpdate.textContent = `Scored 6`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }
+
+    //         setTimeout(() => {
+    //             yourBox.setAttribute("src", "")
+    //             AIBox.setAttribute("src", "")
+    //             if(randomAIrun >= 4 && randomAIrun < 6){
+    //                 runUpdate.textContent = `Innings Break...`
+    //                 target.textContent = ` | Target : ${sumOfAIRuns+1}`
+    //                 AIRun.style.display = 'none'
+    //                 whoBat.textContent = `You`
+    //                 firstSecond.textContent = `Second `
+    //                 firstBat.textContent = `You`
+    //                 firstBowl.textContent = `AI`
+    //             }else{
+    //                 runUpdate.textContent = `Next Ball...`
+    //             }
+    //         }, 3000);
+    //     })
+    //     btnFive.addEventListener("click", ()=>{
+    //         yourBox.setAttribute("src", "five.png")
+    //         randomAIrun = Math.floor(Math.random()*11)
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             AIBox.setAttribute("src", "fist.png")
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             AIBox.setAttribute("src", "one.png")
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             AIBox.setAttribute("src", "two.png")
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             AIBox.setAttribute("src", "three.png")
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             AIBox.setAttribute("src", "four.png")
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             AIBox.setAttribute("src", "five.png")
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             AIBox.setAttribute("src", "thumb.png")
+    //         }
+
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             sumOfAIRuns += 0
+    //             runUpdate.textContent = `Scored 0`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             sumOfAIRuns += 1
+    //             runUpdate.textContent = `Scored 1`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             sumOfAIRuns += 2
+    //             runUpdate.textContent = `Scored 2`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             sumOfAIRuns += 3
+    //             runUpdate.textContent = `Scored 3`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             sumOfAIRuns += 4
+    //             runUpdate.textContent = `Scored 4`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             runUpdate.textContent = `OUT`
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             sumOfAIRuns += 6
+    //             runUpdate.textContent = `Scored 6`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }
+
+    //         setTimeout(() => {
+    //             yourBox.setAttribute("src", "")
+    //             AIBox.setAttribute("src", "")
+    //             if(randomAIrun >= 6 && randomAIrun < 8){
+    //                 runUpdate.textContent = `Innings Break...`
+    //                 target.textContent = ` | Target : ${sumOfAIRuns+1}`
+    //                 AIRun.style.display = 'none'
+    //                 whoBat.textContent = `You`
+    //                 firstSecond.textContent = `Second `
+    //                 firstBat.textContent = `You`
+    //                 firstBowl.textContent = `AI`
+    //             }else{
+    //                 runUpdate.textContent = `Next Ball...`
+    //             }
+    //         }, 3000);
+    //     })
+    //     btnSix.addEventListener("click", ()=>{
+    //         yourBox.setAttribute("src", "thumb.png")
+    //         randomAIrun = Math.floor(Math.random()*11)
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             AIBox.setAttribute("src", "fist.png")
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             AIBox.setAttribute("src", "one.png")
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             AIBox.setAttribute("src", "two.png")
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             AIBox.setAttribute("src", "three.png")
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             AIBox.setAttribute("src", "four.png")
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             AIBox.setAttribute("src", "five.png")
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             AIBox.setAttribute("src", "thumb.png")
+    //         }
+
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             sumOfAIRuns += 0
+    //             runUpdate.textContent = `Scored 0`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             sumOfAIRuns += 1
+    //             runUpdate.textContent = `Scored 1`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             sumOfAIRuns += 2
+    //             runUpdate.textContent = `Scored 2`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             sumOfAIRuns += 3
+    //             runUpdate.textContent = `Scored 3`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             sumOfAIRuns += 4
+    //             runUpdate.textContent = `Scored 4`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             sumOfAIRuns += 5
+    //             runUpdate.textContent = `Scored 5`
+    //             AIRun.textContent = `${sumOfAIRuns}`
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             runUpdate.textContent = `OUT`
+    //         }
+
+    //         setTimeout(() => {
+    //             yourBox.setAttribute("src", "")
+    //             AIBox.setAttribute("src", "")
+    //             if(randomAIrun >= 8 && randomAIrun <= 10){
+    //                 runUpdate.textContent = `Innings Break...`
+    //                 target.textContent = ` | Target : ${sumOfAIRuns+1}`
+    //                 AIRun.style.display = 'none'
+    //                 whoBat.textContent = `You`
+    //                 firstSecond.textContent = `Second `
+    //                 firstBat.textContent = `You`
+    //                 firstBowl.textContent = `AI`
+    //             }else{
+    //                 runUpdate.textContent = `Next Ball...`
+    //             }
+    //         }, 3000);
+    //     })
+    // }
+    
+    // else if(firstBat.innerHTML === `You`){
+
+    //     let sumOfRuns = 0;
+
+    //     btnZero.addEventListener("click", ()=>{
+    //         randomAIrun = Math.floor(Math.random()*11)
+    //         yourBox.setAttribute("src", "fist.png")
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             AIBox.setAttribute("src", "fist.png")
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             AIBox.setAttribute("src", "one.png")
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             AIBox.setAttribute("src", "two.png")
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             AIBox.setAttribute("src", "three.png")
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             AIBox.setAttribute("src", "four.png")
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             AIBox.setAttribute("src", "five.png")
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             AIBox.setAttribute("src", "thumb.png")
+    //         }
+
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             runUpdate.textContent = `OUT`
+    //         }else{
+    //             sumOfRuns += 0
+    //             runUpdate.textContent = `Scored 0`
+    //             yourRun.textContent = `${sumOfRuns}`
+    //         }
+
+    //         setTimeout(() => {
+    //             yourBox.setAttribute("src", "")
+    //             AIBox.setAttribute("src", "")
+    //             if(randomAIrun >= 0 && randomAIrun < 1){
+    //                 runUpdate.textContent = `Innings Break...`
+    //                 target.textContent = ` | Target : ${sumOfRuns+1}`
+    //                 yourRun.style.display = 'none'
+    //                 whoBat.textContent = `AI`
+    //                 firstSecond.textContent = `Second `
+    //                 firstBat.textContent = `AI`
+    //                 firstBowl.textContent = `You`
+    //             }else{
+    //                 runUpdate.textContent = `Next Ball...`
+    //             }
+    //         }, 3000);
+    //     })
+    //     btnOne.addEventListener("click", ()=>{
+    //         yourBox.setAttribute("src", "one.png")
+    //         randomAIrun = Math.floor(Math.random()*11)
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             AIBox.setAttribute("src", "fist.png")
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             AIBox.setAttribute("src", "one.png")
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             AIBox.setAttribute("src", "two.png")
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             AIBox.setAttribute("src", "three.png")
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             AIBox.setAttribute("src", "four.png")
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             AIBox.setAttribute("src", "five.png")
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             AIBox.setAttribute("src", "thumb.png")
+    //         }
+
+    //         if(randomAIrun >= 1 && randomAIrun < 2){
+    //             runUpdate.textContent = `OUT`
+    //         }else{
+    //             sumOfRuns += 1
+    //             runUpdate.textContent = `Scored 1`
+    //             yourRun.textContent = `${sumOfRuns}`
+    //         }
+
+    //         setTimeout(() => {
+    //             yourBox.setAttribute("src", "")
+    //             AIBox.setAttribute("src", "")
+    //             if(randomAIrun >= 1 && randomAIrun < 2){
+    //                 runUpdate.textContent = `Innings Break...`
+    //                 target.textContent = ` | Target : ${sumOfRuns+1}`
+    //                 yourRun.style.display = 'none'
+    //                 whoBat.textContent = `AI`
+    //                 firstSecond.textContent = `Second `
+    //                 firstBat.textContent = `AI`
+    //                 firstBowl.textContent = `You`
+    //             }else{
+    //                 runUpdate.textContent = `Next Ball...`
+    //             }
+    //         }, 3000);
+    //     })
+    //     btnTwo.addEventListener("click", ()=>{
+    //         yourBox.setAttribute("src", "two.png")
+    //         randomAIrun = Math.floor(Math.random()*11)
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             AIBox.setAttribute("src", "fist.png")
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             AIBox.setAttribute("src", "one.png")
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             AIBox.setAttribute("src", "two.png")
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             AIBox.setAttribute("src", "three.png")
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             AIBox.setAttribute("src", "four.png")
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             AIBox.setAttribute("src", "five.png")
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             AIBox.setAttribute("src", "thumb.png")
+    //         }
+
+    //         if(randomAIrun >= 2 && randomAIrun < 3){
+    //             runUpdate.textContent = `OUT`
+    //         }else{
+    //             sumOfRuns += 2
+    //             runUpdate.textContent = `Scored 2`
+    //             yourRun.textContent = `${sumOfRuns}`
+    //         }
+
+
+    //         setTimeout(() => {
+    //             yourBox.setAttribute("src", "")
+    //             AIBox.setAttribute("src", "")
+    //             if(randomAIrun >= 2 && randomAIrun < 3){
+    //                 runUpdate.textContent = `Innings Break...`
+    //                 target.textContent = ` | Target : ${sumOfRuns+1}`
+    //                 yourRun.style.display = 'none'
+    //                 whoBat.textContent = `AI`
+    //                 firstSecond.textContent = `Second `
+    //                 firstBat.textContent = `AI`
+    //                 firstBowl.textContent = `You`
+    //             }else{
+    //                 runUpdate.textContent = `Next Ball...`
+    //             }
+    //         }, 3000);
+    //     })
+    //     btnThree.addEventListener("click", ()=>{
+    //         yourBox.setAttribute("src", "three.png")
+    //         randomAIrun = Math.floor(Math.random()*11)
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             AIBox.setAttribute("src", "fist.png")
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             AIBox.setAttribute("src", "one.png")
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             AIBox.setAttribute("src", "two.png")
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             AIBox.setAttribute("src", "three.png")
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             AIBox.setAttribute("src", "four.png")
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             AIBox.setAttribute("src", "five.png")
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             AIBox.setAttribute("src", "thumb.png")
+    //         }
+
+    //         if(randomAIrun >= 3 && randomAIrun < 4){
+    //             runUpdate.textContent = `OUT`
+    //         }else{
+    //             sumOfRuns += 3
+    //             runUpdate.textContent = `Scored 3`
+    //             yourRun.textContent = `${sumOfRuns}`
+    //         }
+
+    //         setTimeout(() => {
+    //             yourBox.setAttribute("src", "")
+    //             AIBox.setAttribute("src", "")
+    //             if(randomAIrun >= 3 && randomAIrun < 4){
+    //                 runUpdate.textContent = `Innings Break...`
+    //                 target.textContent = ` | Target : ${sumOfRuns+1}`
+    //                 yourRun.style.display = 'none'
+    //                 whoBat.textContent = `AI`
+    //                 firstSecond.textContent = `Second `
+    //                 firstBat.textContent = `AI`
+    //                 firstBowl.textContent = `You`
+    //             }else{
+    //                 runUpdate.textContent = `Next Ball...`
+    //             }
+    //         }, 3000);
+    //     })
+    //     btnFour.addEventListener("click", ()=>{
+    //         yourBox.setAttribute("src", "four.png")
+    //         randomAIrun = Math.floor(Math.random()*11)
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             AIBox.setAttribute("src", "fist.png")
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             AIBox.setAttribute("src", "one.png")
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             AIBox.setAttribute("src", "two.png")
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             AIBox.setAttribute("src", "three.png")
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             AIBox.setAttribute("src", "four.png")
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             AIBox.setAttribute("src", "five.png")
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             AIBox.setAttribute("src", "thumb.png")
+    //         }
+
+    //         if(randomAIrun >= 4 && randomAIrun < 6){
+    //             runUpdate.textContent = `OUT`
+    //         }else{
+    //             sumOfRuns += 4
+    //             runUpdate.textContent = `Scored 4`
+    //             yourRun.textContent = `${sumOfRuns}`
+    //         }
+
+    //         setTimeout(() => {
+    //             yourBox.setAttribute("src", "")
+    //             AIBox.setAttribute("src", "")
+    //             if(randomAIrun >= 4 && randomAIrun < 6){
+    //                 runUpdate.textContent = `Innings Break...`
+    //                 target.textContent = ` | Target : ${sumOfRuns+1}`
+    //                 yourRun.style.display = 'none'
+    //                 whoBat.textContent = `AI`
+    //                 firstSecond.textContent = `Second `
+    //                 firstBat.textContent = `AI`
+    //                 firstBowl.textContent = `You`
+    //             }else{
+    //                 runUpdate.textContent = `Next Ball...`
+    //             }
+    //         }, 3000);
+    //     })
+    //     btnFive.addEventListener("click", ()=>{
+    //         yourBox.setAttribute("src", "five.png")
+    //         randomAIrun = Math.floor(Math.random()*11)
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             AIBox.setAttribute("src", "fist.png")
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             AIBox.setAttribute("src", "one.png")
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             AIBox.setAttribute("src", "two.png")
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             AIBox.setAttribute("src", "three.png")
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             AIBox.setAttribute("src", "four.png")
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             AIBox.setAttribute("src", "five.png")
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             AIBox.setAttribute("src", "thumb.png")
+    //         }
+
+    //         if(randomAIrun >= 6 && randomAIrun < 8){
+    //             runUpdate.textContent = `OUT`
+    //         }else{
+    //             sumOfRuns += 5
+    //             runUpdate.textContent = `Scored 5`
+    //             yourRun.textContent = `${sumOfRuns}`
+    //         }
+
+    //         setTimeout(() => {
+    //             yourBox.setAttribute("src", "")
+    //             AIBox.setAttribute("src", "")
+    //             if(randomAIrun >= 6 && randomAIrun < 8){
+    //                 runUpdate.textContent = `Innings Break...`
+    //                 target.textContent = ` | Target : ${sumOfRuns+1}`
+    //                 yourRun.style.display = 'none'
+    //                 whoBat.textContent = `AI`
+    //                 firstSecond.textContent = `Second `
+    //                 firstBat.textContent = `AI`
+    //                 firstBowl.textContent = `You`
+    //             }else{
+    //                 runUpdate.textContent = `Next Ball...`
+    //             }
+    //         }, 3000);
+    //     })
+    //     btnSix.addEventListener("click", ()=>{
+    //         yourBox.setAttribute("src", "thumb.png")
+    //         randomAIrun = Math.floor(Math.random()*11)
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             AIBox.setAttribute("src", "fist.png")
+    //         }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //             AIBox.setAttribute("src", "one.png")
+    //         }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //             AIBox.setAttribute("src", "two.png")
+    //         }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //             AIBox.setAttribute("src", "three.png")
+    //         }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //             AIBox.setAttribute("src", "four.png")
+    //         }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //             AIBox.setAttribute("src", "five.png")
+    //         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             AIBox.setAttribute("src", "thumb.png")
+    //         }
+
+    //         if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             runUpdate.textContent = `OUT`
+    //         }else{
+    //             sumOfRuns += 6
+    //             runUpdate.textContent = `Scored 6`
+    //             yourRun.textContent = `${sumOfRuns}`
+    //         }
+
+    //         setTimeout(() => {
+    //             yourBox.setAttribute("src", "")
+    //             AIBox.setAttribute("src", "")
+    //             if(randomAIrun >= 8 && randomAIrun <= 10){
+    //                 runUpdate.textContent = `Innings Break...`
+    //                 target.textContent = ` | Target : ${sumOfRuns+1}`
+    //                 yourRun.style.display = 'none'
+    //                 whoBat.textContent = `AI`
+    //                 firstSecond.textContent = `Second `
+    //                 firstBat.textContent = `AI`
+    //                 firstBowl.textContent = `You`
+    //             }else{
+    //                 runUpdate.textContent = `Next Ball...`
+    //             }
+    //         }, 3000);
+    //     })
+    // }
+
+// })
+
+// let sumOfRuns = 0;
+
+// btnZero.addEventListener("click", ()=>{
+//     randomAIrun = Math.floor(Math.random()*11)
+//     yourBox.setAttribute("src", "fist.png")
+//     if(randomAIrun >= 0 && randomAIrun < 1){
+//         AIBox.setAttribute("src", "fist.png")
+//     }else if(randomAIrun >= 1 && randomAIrun < 2){
+//         AIBox.setAttribute("src", "one.png")
+//     }else if(randomAIrun >= 2 && randomAIrun < 3){
+//         AIBox.setAttribute("src", "two.png")
+//     }else if(randomAIrun >= 3 && randomAIrun < 4){
+//         AIBox.setAttribute("src", "three.png")
+//     }else if(randomAIrun >= 4 && randomAIrun < 6){
+//         AIBox.setAttribute("src", "four.png")
+//     }else if(randomAIrun >= 6 && randomAIrun < 8){
+//         AIBox.setAttribute("src", "five.png")
+//     }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//         AIBox.setAttribute("src", "thumb.png")
+//     }
+
+//     if(randomAIrun >= 0 && randomAIrun < 1){
+//         runUpdate.textContent = `OUT`
+//     }else{
+//         sumOfRuns += 0
+//         runUpdate.textContent = `Scored 0`
+//         yourRun.textContent = `${sumOfRuns}`
+//     }
+
+//     setTimeout(() => {
+//         yourBox.setAttribute("src", "")
+//         AIBox.setAttribute("src", "")
+//         if(randomAIrun >= 0 && randomAIrun < 1){
+//             runUpdate.textContent = `Innings Break...`
+//             target.textContent = ` | Target : ${sumOfRuns+1}`
+//             yourRun.style.display = 'none'
+//             whoBat.textContent = `AI`
+//             firstSecond.textContent = `Second `
+//             firstBat.textContent = `AI`
+//             firstBowl.textContent = `You`
+//         }else{
+//             runUpdate.textContent = `Next Ball...`
+//         }
+//     }, 3000);
+// })
+// btnOne.addEventListener("click", ()=>{
+//     yourBox.setAttribute("src", "one.png")
+//     randomAIrun = Math.floor(Math.random()*11)
+//     if(randomAIrun >= 0 && randomAIrun < 1){
+//         AIBox.setAttribute("src", "fist.png")
+//     }else if(randomAIrun >= 1 && randomAIrun < 2){
+//         AIBox.setAttribute("src", "one.png")
+//     }else if(randomAIrun >= 2 && randomAIrun < 3){
+//         AIBox.setAttribute("src", "two.png")
+//     }else if(randomAIrun >= 3 && randomAIrun < 4){
+//         AIBox.setAttribute("src", "three.png")
+//     }else if(randomAIrun >= 4 && randomAIrun < 6){
+//         AIBox.setAttribute("src", "four.png")
+//     }else if(randomAIrun >= 6 && randomAIrun < 8){
+//         AIBox.setAttribute("src", "five.png")
+//     }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//         AIBox.setAttribute("src", "thumb.png")
+//     }
+
+//     if(randomAIrun >= 1 && randomAIrun < 2){
+//         runUpdate.textContent = `OUT`
+//     }else{
+//         sumOfRuns += 1
+//         runUpdate.textContent = `Scored 1`
+//         yourRun.textContent = `${sumOfRuns}`
+//     }
+
+//     setTimeout(() => {
+//         yourBox.setAttribute("src", "")
+//         AIBox.setAttribute("src", "")
+//         if(randomAIrun >= 1 && randomAIrun < 2){
+//             runUpdate.textContent = `Innings Break...`
+//         }else{
+//             runUpdate.textContent = `Next Ball...`
+//         }
+//     }, 3000);
+// })
+// btnTwo.addEventListener("click", ()=>{
+//     yourBox.setAttribute("src", "two.png")
+//     randomAIrun = Math.floor(Math.random()*11)
+//     if(randomAIrun >= 0 && randomAIrun < 1){
+//         AIBox.setAttribute("src", "fist.png")
+//     }else if(randomAIrun >= 1 && randomAIrun < 2){
+//         AIBox.setAttribute("src", "one.png")
+//     }else if(randomAIrun >= 2 && randomAIrun < 3){
+//         AIBox.setAttribute("src", "two.png")
+//     }else if(randomAIrun >= 3 && randomAIrun < 4){
+//         AIBox.setAttribute("src", "three.png")
+//     }else if(randomAIrun >= 4 && randomAIrun < 6){
+//         AIBox.setAttribute("src", "four.png")
+//     }else if(randomAIrun >= 6 && randomAIrun < 8){
+//         AIBox.setAttribute("src", "five.png")
+//     }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//         AIBox.setAttribute("src", "thumb.png")
+//     }
+
+//     if(randomAIrun >= 2 && randomAIrun < 3){
+//         runUpdate.textContent = `OUT`
+//     }else{
+//         sumOfRuns += 2
+//         runUpdate.textContent = `Scored 2`
+//         yourRun.textContent = `${sumOfRuns}`
+//     }
+
+
+//     setTimeout(() => {
+//         yourBox.setAttribute("src", "")
+//         AIBox.setAttribute("src", "")
+//         if(randomAIrun >= 2 && randomAIrun < 3){
+//             runUpdate.textContent = `Innings Break...`
+//         }else{
+//             runUpdate.textContent = `Next Ball...`
+//         }
+//     }, 3000);
+// })
+// btnThree.addEventListener("click", ()=>{
+//     yourBox.setAttribute("src", "three.png")
+//     randomAIrun = Math.floor(Math.random()*11)
+//     if(randomAIrun >= 0 && randomAIrun < 1){
+//         AIBox.setAttribute("src", "fist.png")
+//     }else if(randomAIrun >= 1 && randomAIrun < 2){
+//         AIBox.setAttribute("src", "one.png")
+//     }else if(randomAIrun >= 2 && randomAIrun < 3){
+//         AIBox.setAttribute("src", "two.png")
+//     }else if(randomAIrun >= 3 && randomAIrun < 4){
+//         AIBox.setAttribute("src", "three.png")
+//     }else if(randomAIrun >= 4 && randomAIrun < 6){
+//         AIBox.setAttribute("src", "four.png")
+//     }else if(randomAIrun >= 6 && randomAIrun < 8){
+//         AIBox.setAttribute("src", "five.png")
+//     }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//         AIBox.setAttribute("src", "thumb.png")
+//     }
+
+//     if(randomAIrun >= 3 && randomAIrun < 4){
+//         runUpdate.textContent = `OUT`
+//     }else{
+//         sumOfRuns += 3
+//         runUpdate.textContent = `Scored 3`
+//         yourRun.textContent = `${sumOfRuns}`
+//     }
+
+//     setTimeout(() => {
+//         yourBox.setAttribute("src", "")
+//         AIBox.setAttribute("src", "")
+//         if(randomAIrun >= 3 && randomAIrun < 4){
+//             runUpdate.textContent = `Innings Break...`
+//         }else{
+//             runUpdate.textContent = `Next Ball...`
+//         }
+//     }, 3000);
+// })
+// btnFour.addEventListener("click", ()=>{
+//     yourBox.setAttribute("src", "four.png")
+//     randomAIrun = Math.floor(Math.random()*11)
+//     if(randomAIrun >= 0 && randomAIrun < 1){
+//         AIBox.setAttribute("src", "fist.png")
+//     }else if(randomAIrun >= 1 && randomAIrun < 2){
+//         AIBox.setAttribute("src", "one.png")
+//     }else if(randomAIrun >= 2 && randomAIrun < 3){
+//         AIBox.setAttribute("src", "two.png")
+//     }else if(randomAIrun >= 3 && randomAIrun < 4){
+//         AIBox.setAttribute("src", "three.png")
+//     }else if(randomAIrun >= 4 && randomAIrun < 6){
+//         AIBox.setAttribute("src", "four.png")
+//     }else if(randomAIrun >= 6 && randomAIrun < 8){
+//         AIBox.setAttribute("src", "five.png")
+//     }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//         AIBox.setAttribute("src", "thumb.png")
+//     }
+
+//     if(randomAIrun >= 4 && randomAIrun < 6){
+//         runUpdate.textContent = `OUT`
+//     }else{
+//         sumOfRuns += 4
+//         runUpdate.textContent = `Scored 4`
+//         yourRun.textContent = `${sumOfRuns}`
+//     }
+
+//     setTimeout(() => {
+//         yourBox.setAttribute("src", "")
+//         AIBox.setAttribute("src", "")
+//         if(randomAIrun >= 4 && randomAIrun < 6){
+//             runUpdate.textContent = `Innings Break...`
+//         }else{
+//             runUpdate.textContent = `Next Ball...`
+//         }
+//     }, 3000);
+// })
+// btnFive.addEventListener("click", ()=>{
+//     yourBox.setAttribute("src", "five.png")
+//     randomAIrun = Math.floor(Math.random()*11)
+//     if(randomAIrun >= 0 && randomAIrun < 1){
+//         AIBox.setAttribute("src", "fist.png")
+//     }else if(randomAIrun >= 1 && randomAIrun < 2){
+//         AIBox.setAttribute("src", "one.png")
+//     }else if(randomAIrun >= 2 && randomAIrun < 3){
+//         AIBox.setAttribute("src", "two.png")
+//     }else if(randomAIrun >= 3 && randomAIrun < 4){
+//         AIBox.setAttribute("src", "three.png")
+//     }else if(randomAIrun >= 4 && randomAIrun < 6){
+//         AIBox.setAttribute("src", "four.png")
+//     }else if(randomAIrun >= 6 && randomAIrun < 8){
+//         AIBox.setAttribute("src", "five.png")
+//     }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//         AIBox.setAttribute("src", "thumb.png")
+//     }
+
+//     if(randomAIrun >= 6 && randomAIrun < 8){
+//         runUpdate.textContent = `OUT`
+//     }else{
+//         sumOfRuns += 5
+//         runUpdate.textContent = `Scored 5`
+//         yourRun.textContent = `${sumOfRuns}`
+//     }
+
+//     setTimeout(() => {
+//         yourBox.setAttribute("src", "")
+//         AIBox.setAttribute("src", "")
+//         if(randomAIrun >= 6 && randomAIrun < 8){
+//             runUpdate.textContent = `Innings Break...`
+//         }else{
+//             runUpdate.textContent = `Next Ball...`
+//         }
+//     }, 3000);
+// })
+// btnSix.addEventListener("click", ()=>{
+//     yourBox.setAttribute("src", "thumb.png")
+//     randomAIrun = Math.floor(Math.random()*11)
+//     if(randomAIrun >= 0 && randomAIrun < 1){
+//         AIBox.setAttribute("src", "fist.png")
+//     }else if(randomAIrun >= 1 && randomAIrun < 2){
+//         AIBox.setAttribute("src", "one.png")
+//     }else if(randomAIrun >= 2 && randomAIrun < 3){
+//         AIBox.setAttribute("src", "two.png")
+//     }else if(randomAIrun >= 3 && randomAIrun < 4){
+//         AIBox.setAttribute("src", "three.png")
+//     }else if(randomAIrun >= 4 && randomAIrun < 6){
+//         AIBox.setAttribute("src", "four.png")
+//     }else if(randomAIrun >= 6 && randomAIrun < 8){
+//         AIBox.setAttribute("src", "five.png")
+//     }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//         AIBox.setAttribute("src", "thumb.png")
+//     }
+
+//     if(randomAIrun >= 8 && randomAIrun <= 10){
+//         runUpdate.textContent = `OUT`
+//     }else{
+//         sumOfRuns += 6
+//         runUpdate.textContent = `Scored 6`
+//         yourRun.textContent = `${sumOfRuns}`
+//     }
+
+//     setTimeout(() => {
+//         yourBox.setAttribute("src", "")
+//         AIBox.setAttribute("src", "")
+//         if(randomAIrun >= 8 && randomAIrun <= 10){
+//             runUpdate.textContent = `Innings Break...`
+//         }else{
+//             runUpdate.textContent = `Next Ball...`
+//         }
+//     }, 3000);
+// })
+
+
+
+
+
+
+    // let sumOfRuns = 0;
+
+    // btnZero.addEventListener("click", ()=>{
+    //     randomAIrun = Math.floor(Math.random()*11)
+    //     yourBox.setAttribute("src", "fist.png")
+    //     if(randomAIrun >= 0 && randomAIrun < 1){
+    //         AIBox.setAttribute("src", "fist.png")
+    //     }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //         AIBox.setAttribute("src", "one.png")
+    //     }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //         AIBox.setAttribute("src", "two.png")
+    //     }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //         AIBox.setAttribute("src", "three.png")
+    //     }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //         AIBox.setAttribute("src", "four.png")
+    //     }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //         AIBox.setAttribute("src", "five.png")
+    //     }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //         AIBox.setAttribute("src", "thumb.png")
+    //     }
+
+    //     if(randomAIrun >= 0 && randomAIrun < 1){
+    //         runUpdate.textContent = `OUT`
+    //     }else{
+    //         sumOfRuns += 0
+    //         runUpdate.textContent = `Scored 0`
+    //         yourRun.textContent = `${sumOfRuns}`
+    //     }
+
+    //     setTimeout(() => {
+    //         yourBox.setAttribute("src", "")
+    //         AIBox.setAttribute("src", "")
+    //         if(randomAIrun >= 0 && randomAIrun < 1){
+    //             runUpdate.textContent = `Innings Break...`
+    //             target.textContent = ` | Target : ${sumOfRuns+1}`
+    //             yourRun.style.display = 'none'
+    //             whoBat.textContent = `AI`
+    //             firstSecond.textContent = `Second `
+    //             firstBat.textContent = `AI`
+    //             firstBowl.textContent = `You`
+    //         }else{
+    //             runUpdate.textContent = `Next Ball...`
+    //         }
+    //     }, 3000);
+    // })
+    // btnOne.addEventListener("click", ()=>{
+    //     yourBox.setAttribute("src", "one.png")
+    //     randomAIrun = Math.floor(Math.random()*11)
+    //     if(randomAIrun >= 0 && randomAIrun < 1){
+    //         AIBox.setAttribute("src", "fist.png")
+    //     }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //         AIBox.setAttribute("src", "one.png")
+    //     }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //         AIBox.setAttribute("src", "two.png")
+    //     }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //         AIBox.setAttribute("src", "three.png")
+    //     }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //         AIBox.setAttribute("src", "four.png")
+    //     }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //         AIBox.setAttribute("src", "five.png")
+    //     }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //         AIBox.setAttribute("src", "thumb.png")
+    //     }
+
+    //     if(randomAIrun >= 1 && randomAIrun < 2){
+    //         runUpdate.textContent = `OUT`
+    //     }else{
+    //         sumOfRuns += 1
+    //         runUpdate.textContent = `Scored 1`
+    //         yourRun.textContent = `${sumOfRuns}`
+    //     }
+
+    //     setTimeout(() => {
+    //         yourBox.setAttribute("src", "")
+    //         AIBox.setAttribute("src", "")
+    //         if(randomAIrun >= 1 && randomAIrun < 2){
+    //             runUpdate.textContent = `Innings Break...`
+    //             target.textContent = ` | Target : ${sumOfRuns+1}`
+    //             yourRun.style.display = 'none'
+    //             whoBat.textContent = `AI`
+    //             firstSecond.textContent = `Second `
+    //             firstBat.textContent = `AI`
+    //             firstBowl.textContent = `You`
+    //         }else{
+    //             runUpdate.textContent = `Next Ball...`
+    //         }
+    //     }, 3000);
+    // })
+    // btnTwo.addEventListener("click", ()=>{
+    //     yourBox.setAttribute("src", "two.png")
+    //     randomAIrun = Math.floor(Math.random()*11)
+    //     if(randomAIrun >= 0 && randomAIrun < 1){
+    //         AIBox.setAttribute("src", "fist.png")
+    //     }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //         AIBox.setAttribute("src", "one.png")
+    //     }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //         AIBox.setAttribute("src", "two.png")
+    //     }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //         AIBox.setAttribute("src", "three.png")
+    //     }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //         AIBox.setAttribute("src", "four.png")
+    //     }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //         AIBox.setAttribute("src", "five.png")
+    //     }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //         AIBox.setAttribute("src", "thumb.png")
+    //     }
+
+    //     if(randomAIrun >= 2 && randomAIrun < 3){
+    //         runUpdate.textContent = `OUT`
+    //     }else{
+    //         sumOfRuns += 2
+    //         runUpdate.textContent = `Scored 2`
+    //         yourRun.textContent = `${sumOfRuns}`
+    //     }
+
+
+    //     setTimeout(() => {
+    //         yourBox.setAttribute("src", "")
+    //         AIBox.setAttribute("src", "")
+    //         if(randomAIrun >= 2 && randomAIrun < 3){
+    //             runUpdate.textContent = `Innings Break...`
+    //             target.textContent = ` | Target : ${sumOfRuns+1}`
+    //             yourRun.style.display = 'none'
+    //             whoBat.textContent = `AI`
+    //             firstSecond.textContent = `Second `
+    //             firstBat.textContent = `AI`
+    //             firstBowl.textContent = `You`
+    //         }else{
+    //             runUpdate.textContent = `Next Ball...`
+    //         }
+    //     }, 3000);
+    // })
+    // btnThree.addEventListener("click", ()=>{
+    //     yourBox.setAttribute("src", "three.png")
+    //     randomAIrun = Math.floor(Math.random()*11)
+    //     if(randomAIrun >= 0 && randomAIrun < 1){
+    //         AIBox.setAttribute("src", "fist.png")
+    //     }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //         AIBox.setAttribute("src", "one.png")
+    //     }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //         AIBox.setAttribute("src", "two.png")
+    //     }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //         AIBox.setAttribute("src", "three.png")
+    //     }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //         AIBox.setAttribute("src", "four.png")
+    //     }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //         AIBox.setAttribute("src", "five.png")
+    //     }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //         AIBox.setAttribute("src", "thumb.png")
+    //     }
+
+    //     if(randomAIrun >= 3 && randomAIrun < 4){
+    //         runUpdate.textContent = `OUT`
+    //     }else{
+    //         sumOfRuns += 3
+    //         runUpdate.textContent = `Scored 3`
+    //         yourRun.textContent = `${sumOfRuns}`
+    //     }
+
+    //     setTimeout(() => {
+    //         yourBox.setAttribute("src", "")
+    //         AIBox.setAttribute("src", "")
+    //         if(randomAIrun >= 3 && randomAIrun < 4){
+    //             runUpdate.textContent = `Innings Break...`
+    //             target.textContent = ` | Target : ${sumOfRuns+1}`
+    //             yourRun.style.display = 'none'
+    //             whoBat.textContent = `AI`
+    //             firstSecond.textContent = `Second `
+    //             firstBat.textContent = `AI`
+    //             firstBowl.textContent = `You`
+    //         }else{
+    //             runUpdate.textContent = `Next Ball...`
+    //         }
+    //     }, 3000);
+    // })
+    // btnFour.addEventListener("click", ()=>{
+    //     yourBox.setAttribute("src", "four.png")
+    //     randomAIrun = Math.floor(Math.random()*11)
+    //     if(randomAIrun >= 0 && randomAIrun < 1){
+    //         AIBox.setAttribute("src", "fist.png")
+    //     }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //         AIBox.setAttribute("src", "one.png")
+    //     }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //         AIBox.setAttribute("src", "two.png")
+    //     }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //         AIBox.setAttribute("src", "three.png")
+    //     }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //         AIBox.setAttribute("src", "four.png")
+    //     }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //         AIBox.setAttribute("src", "five.png")
+    //     }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //         AIBox.setAttribute("src", "thumb.png")
+    //     }
+
+    //     if(randomAIrun >= 4 && randomAIrun < 6){
+    //         runUpdate.textContent = `OUT`
+    //     }else{
+    //         sumOfRuns += 4
+    //         runUpdate.textContent = `Scored 4`
+    //         yourRun.textContent = `${sumOfRuns}`
+    //     }
+
+    //     setTimeout(() => {
+    //         yourBox.setAttribute("src", "")
+    //         AIBox.setAttribute("src", "")
+    //         if(randomAIrun >= 4 && randomAIrun < 6){
+    //             runUpdate.textContent = `Innings Break...`
+    //             target.textContent = ` | Target : ${sumOfRuns+1}`
+    //             yourRun.style.display = 'none'
+    //             whoBat.textContent = `AI`
+    //             firstSecond.textContent = `Second `
+    //             firstBat.textContent = `AI`
+    //             firstBowl.textContent = `You`
+    //         }else{
+    //             runUpdate.textContent = `Next Ball...`
+    //         }
+    //     }, 3000);
+    // })
+    // btnFive.addEventListener("click", ()=>{
+    //     yourBox.setAttribute("src", "five.png")
+    //     randomAIrun = Math.floor(Math.random()*11)
+    //     if(randomAIrun >= 0 && randomAIrun < 1){
+    //         AIBox.setAttribute("src", "fist.png")
+    //     }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //         AIBox.setAttribute("src", "one.png")
+    //     }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //         AIBox.setAttribute("src", "two.png")
+    //     }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //         AIBox.setAttribute("src", "three.png")
+    //     }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //         AIBox.setAttribute("src", "four.png")
+    //     }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //         AIBox.setAttribute("src", "five.png")
+    //     }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //         AIBox.setAttribute("src", "thumb.png")
+    //     }
+
+    //     if(randomAIrun >= 6 && randomAIrun < 8){
+    //         runUpdate.textContent = `OUT`
+    //     }else{
+    //         sumOfRuns += 5
+    //         runUpdate.textContent = `Scored 5`
+    //         yourRun.textContent = `${sumOfRuns}`
+    //     }
+
+    //     setTimeout(() => {
+    //         yourBox.setAttribute("src", "")
+    //         AIBox.setAttribute("src", "")
+    //         if(randomAIrun >= 6 && randomAIrun < 8){
+    //             runUpdate.textContent = `Innings Break...`
+    //             target.textContent = ` | Target : ${sumOfRuns+1}`
+    //             yourRun.style.display = 'none'
+    //             whoBat.textContent = `AI`
+    //             firstSecond.textContent = `Second `
+    //             firstBat.textContent = `AI`
+    //             firstBowl.textContent = `You`
+    //         }else{
+    //             runUpdate.textContent = `Next Ball...`
+    //         }
+    //     }, 3000);
+    // })
+    // btnSix.addEventListener("click", ()=>{
+    //     yourBox.setAttribute("src", "thumb.png")
+    //     randomAIrun = Math.floor(Math.random()*11)
+    //     if(randomAIrun >= 0 && randomAIrun < 1){
+    //         AIBox.setAttribute("src", "fist.png")
+    //     }else if(randomAIrun >= 1 && randomAIrun < 2){
+    //         AIBox.setAttribute("src", "one.png")
+    //     }else if(randomAIrun >= 2 && randomAIrun < 3){
+    //         AIBox.setAttribute("src", "two.png")
+    //     }else if(randomAIrun >= 3 && randomAIrun < 4){
+    //         AIBox.setAttribute("src", "three.png")
+    //     }else if(randomAIrun >= 4 && randomAIrun < 6){
+    //         AIBox.setAttribute("src", "four.png")
+    //     }else if(randomAIrun >= 6 && randomAIrun < 8){
+    //         AIBox.setAttribute("src", "five.png")
+    //     }else if(randomAIrun >= 8 && randomAIrun <= 10){
+    //         AIBox.setAttribute("src", "thumb.png")
+    //     }
+
+    //     if(randomAIrun >= 8 && randomAIrun <= 10){
+    //         runUpdate.textContent = `OUT`
+    //     }else{
+    //         sumOfRuns += 6
+    //         runUpdate.textContent = `Scored 6`
+    //         yourRun.textContent = `${sumOfRuns}`
+    //     }
+
+    //     setTimeout(() => {
+    //         yourBox.setAttribute("src", "")
+    //         AIBox.setAttribute("src", "")
+    //         if(randomAIrun >= 8 && randomAIrun <= 10){
+    //             runUpdate.textContent = `Innings Break...`
+    //             target.textContent = ` | Target : ${sumOfRuns+1}`
+    //             yourRun.style.display = 'none'
+    //             whoBat.textContent = `AI`
+    //             firstSecond.textContent = `Second `
+    //             firstBat.textContent = `AI`
+    //             firstBowl.textContent = `You`
+    //         }else{
+    //             runUpdate.textContent = `Next Ball...`
+    //         }
+    //     }, 3000);
+    // })
+
+
+
+
+// let sumOfAIRuns = 0;
+
+//     btnZero.addEventListener("click", ()=>{
+//         randomAIrun = Math.floor(Math.random()*11)
+//         yourBox.setAttribute("src", "fist.png")
+//         if(randomAIrun >= 0 && randomAIrun < 1){
+//             AIBox.setAttribute("src", "fist.png")
+//         }else if(randomAIrun >= 1 && randomAIrun < 2){
+//             AIBox.setAttribute("src", "one.png")
+//         }else if(randomAIrun >= 2 && randomAIrun < 3){
+//             AIBox.setAttribute("src", "two.png")
+//         }else if(randomAIrun >= 3 && randomAIrun < 4){
+//             AIBox.setAttribute("src", "three.png")
+//         }else if(randomAIrun >= 4 && randomAIrun < 6){
+//             AIBox.setAttribute("src", "four.png")
+//         }else if(randomAIrun >= 6 && randomAIrun < 8){
+//             AIBox.setAttribute("src", "five.png")
+//         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//             AIBox.setAttribute("src", "thumb.png")
+//         }
+
+//         if(randomAIrun >= 0 && randomAIrun < 1){
+//             runUpdate.textContent = `OUT`
+//         }else if(randomAIrun >= 1 && randomAIrun < 2){
+//             sumOfAIRuns += 1
+//             runUpdate.textContent = `Scored 1`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 2 && randomAIrun < 3){
+//             sumOfAIRuns += 2
+//             runUpdate.textContent = `Scored 2`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 3 && randomAIrun < 4){
+//             sumOfAIRuns += 3
+//             runUpdate.textContent = `Scored 3`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 4 && randomAIrun < 6){
+//             sumOfAIRuns += 4
+//             runUpdate.textContent = `Scored 4`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 6 && randomAIrun < 8){
+//             sumOfAIRuns += 5
+//             runUpdate.textContent = `Scored 5`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//             sumOfAIRuns += 6
+//             runUpdate.textContent = `Scored 6`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }
+
+//         setTimeout(() => {
+//             yourBox.setAttribute("src", "")
+//             AIBox.setAttribute("src", "")
+//             if(randomAIrun >= 0 && randomAIrun < 1){
+//                 runUpdate.textContent = `Innings Break...`
+//                 target.textContent = ` | Target : ${sumOfAIRuns+1}`
+//                 AIRun.style.display = 'none'
+//                 whoBat.textContent = `You`
+//                 firstSecond.textContent = `Second `
+//                 firstBat.textContent = `You`
+//                 firstBowl.textContent = `AI`
+//             }else{
+//                 runUpdate.textContent = `Next Ball...`
+//             }
+//         }, 3000);
+//     })
+//     btnOne.addEventListener("click", ()=>{
+//         yourBox.setAttribute("src", "one.png")
+//         randomAIrun = Math.floor(Math.random()*11)
+//         if(randomAIrun >= 0 && randomAIrun < 1){
+//             AIBox.setAttribute("src", "fist.png")
+//         }else if(randomAIrun >= 1 && randomAIrun < 2){
+//             AIBox.setAttribute("src", "one.png")
+//         }else if(randomAIrun >= 2 && randomAIrun < 3){
+//             AIBox.setAttribute("src", "two.png")
+//         }else if(randomAIrun >= 3 && randomAIrun < 4){
+//             AIBox.setAttribute("src", "three.png")
+//         }else if(randomAIrun >= 4 && randomAIrun < 6){
+//             AIBox.setAttribute("src", "four.png")
+//         }else if(randomAIrun >= 6 && randomAIrun < 8){
+//             AIBox.setAttribute("src", "five.png")
+//         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//             AIBox.setAttribute("src", "thumb.png")
+//         }
+
+//         if(randomAIrun >= 0 && randomAIrun < 1){
+//             sumOfAIRuns += 0
+//             runUpdate.textContent = `Scored 0`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 1 && randomAIrun < 2){
+//             runUpdate.textContent = `OUT`
+//         }else if(randomAIrun >= 2 && randomAIrun < 3){
+//             sumOfAIRuns += 2
+//             runUpdate.textContent = `Scored 2`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 3 && randomAIrun < 4){
+//             sumOfAIRuns += 3
+//             runUpdate.textContent = `Scored 3`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 4 && randomAIrun < 6){
+//             sumOfAIRuns += 4
+//             runUpdate.textContent = `Scored 4`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 6 && randomAIrun < 8){
+//             sumOfAIRuns += 5
+//             runUpdate.textContent = `Scored 5`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//             sumOfAIRuns += 6
+//             runUpdate.textContent = `Scored 6`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }
+
+//         setTimeout(() => {
+//             yourBox.setAttribute("src", "")
+//             AIBox.setAttribute("src", "")
+//             if(randomAIrun >= 1 && randomAIrun < 2){
+//                 runUpdate.textContent = `Innings Break...`
+//                 target.textContent = ` | Target : ${sumOfAIRuns+1}`
+//                 AIRun.style.display = 'none'
+//                 whoBat.textContent = `You`
+//                 firstSecond.textContent = `Second `
+//                 firstBat.textContent = `You`
+//                 firstBowl.textContent = `AI`
+//             }else{
+//                 runUpdate.textContent = `Next Ball...`
+//             }
+//         }, 3000);
+//     })
+//     btnTwo.addEventListener("click", ()=>{
+//         yourBox.setAttribute("src", "two.png")
+//         randomAIrun = Math.floor(Math.random()*11)
+//         if(randomAIrun >= 0 && randomAIrun < 1){
+//             AIBox.setAttribute("src", "fist.png")
+//         }else if(randomAIrun >= 1 && randomAIrun < 2){
+//             AIBox.setAttribute("src", "one.png")
+//         }else if(randomAIrun >= 2 && randomAIrun < 3){
+//             AIBox.setAttribute("src", "two.png")
+//         }else if(randomAIrun >= 3 && randomAIrun < 4){
+//             AIBox.setAttribute("src", "three.png")
+//         }else if(randomAIrun >= 4 && randomAIrun < 6){
+//             AIBox.setAttribute("src", "four.png")
+//         }else if(randomAIrun >= 6 && randomAIrun < 8){
+//             AIBox.setAttribute("src", "five.png")
+//         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//             AIBox.setAttribute("src", "thumb.png")
+//         }
+
+//         if(randomAIrun >= 0 && randomAIrun < 1){
+//             sumOfAIRuns += 0
+//             runUpdate.textContent = `Scored 0`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 1 && randomAIrun < 2){
+//             sumOfAIRuns += 1
+//             runUpdate.textContent = `Scored 1`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 2 && randomAIrun < 3){
+//             runUpdate.textContent = `OUT`
+//         }else if(randomAIrun >= 3 && randomAIrun < 4){
+//             sumOfAIRuns += 3
+//             runUpdate.textContent = `Scored 3`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 4 && randomAIrun < 6){
+//             sumOfAIRuns += 4
+//             runUpdate.textContent = `Scored 4`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 6 && randomAIrun < 8){
+//             sumOfAIRuns += 5
+//             runUpdate.textContent = `Scored 5`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//             sumOfAIRuns += 6
+//             runUpdate.textContent = `Scored 6`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }
+
+
+//         setTimeout(() => {
+//             yourBox.setAttribute("src", "")
+//             AIBox.setAttribute("src", "")
+//             if(randomAIrun >= 2 && randomAIrun < 3){
+//                 runUpdate.textContent = `Innings Break...`
+//                 target.textContent = ` | Target : ${sumOfAIRuns+1}`
+//                 AIRun.style.display = 'none'
+//                 whoBat.textContent = `You`
+//                 firstSecond.textContent = `Second `
+//                 firstBat.textContent = `You`
+//                 firstBowl.textContent = `AI`
+//             }else{
+//                 runUpdate.textContent = `Next Ball...`
+//             }
+//         }, 3000);
+//     })
+//     btnThree.addEventListener("click", ()=>{
+//         yourBox.setAttribute("src", "three.png")
+//         randomAIrun = Math.floor(Math.random()*11)
+//         if(randomAIrun >= 0 && randomAIrun < 1){
+//             AIBox.setAttribute("src", "fist.png")
+//         }else if(randomAIrun >= 1 && randomAIrun < 2){
+//             AIBox.setAttribute("src", "one.png")
+//         }else if(randomAIrun >= 2 && randomAIrun < 3){
+//             AIBox.setAttribute("src", "two.png")
+//         }else if(randomAIrun >= 3 && randomAIrun < 4){
+//             AIBox.setAttribute("src", "three.png")
+//         }else if(randomAIrun >= 4 && randomAIrun < 6){
+//             AIBox.setAttribute("src", "four.png")
+//         }else if(randomAIrun >= 6 && randomAIrun < 8){
+//             AIBox.setAttribute("src", "five.png")
+//         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//             AIBox.setAttribute("src", "thumb.png")
+//         }
+
+//         if(randomAIrun >= 0 && randomAIrun < 1){
+//             sumOfAIRuns += 0
+//             runUpdate.textContent = `Scored 0`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 1 && randomAIrun < 2){
+//             sumOfAIRuns += 1
+//             runUpdate.textContent = `Scored 1`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 2 && randomAIrun < 3){
+//             sumOfAIRuns += 2
+//             runUpdate.textContent = `Scored 2`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 3 && randomAIrun < 4){
+//             runUpdate.textContent = `OUT`
+//         }else if(randomAIrun >= 4 && randomAIrun < 6){
+//             sumOfAIRuns += 4
+//             runUpdate.textContent = `Scored 4`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 6 && randomAIrun < 8){
+//             sumOfAIRuns += 5
+//             runUpdate.textContent = `Scored 5`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//             sumOfAIRuns += 6
+//             runUpdate.textContent = `Scored 6`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }
+
+//         setTimeout(() => {
+//             yourBox.setAttribute("src", "")
+//             AIBox.setAttribute("src", "")
+//             if(randomAIrun >= 3 && randomAIrun < 4){
+//                 runUpdate.textContent = `Innings Break...`
+//                 target.textContent = ` | Target : ${sumOfAIRuns+1}`
+//                 AIRun.style.display = 'none'
+//                 whoBat.textContent = `You`
+//                 firstSecond.textContent = `Second `
+//                 firstBat.textContent = `You`
+//                 firstBowl.textContent = `AI`
+//             }else{
+//                 runUpdate.textContent = `Next Ball...`
+//             }
+//         }, 3000);
+//     })
+//     btnFour.addEventListener("click", ()=>{
+//         yourBox.setAttribute("src", "four.png")
+//         randomAIrun = Math.floor(Math.random()*11)
+//         if(randomAIrun >= 0 && randomAIrun < 1){
+//             AIBox.setAttribute("src", "fist.png")
+//         }else if(randomAIrun >= 1 && randomAIrun < 2){
+//             AIBox.setAttribute("src", "one.png")
+//         }else if(randomAIrun >= 2 && randomAIrun < 3){
+//             AIBox.setAttribute("src", "two.png")
+//         }else if(randomAIrun >= 3 && randomAIrun < 4){
+//             AIBox.setAttribute("src", "three.png")
+//         }else if(randomAIrun >= 4 && randomAIrun < 6){
+//             AIBox.setAttribute("src", "four.png")
+//         }else if(randomAIrun >= 6 && randomAIrun < 8){
+//             AIBox.setAttribute("src", "five.png")
+//         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//             AIBox.setAttribute("src", "thumb.png")
+//         }
+
+//         if(randomAIrun >= 0 && randomAIrun < 1){
+//             sumOfAIRuns += 0
+//             runUpdate.textContent = `Scored 0`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 1 && randomAIrun < 2){
+//             sumOfAIRuns += 1
+//             runUpdate.textContent = `Scored 1`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 2 && randomAIrun < 3){
+//             sumOfAIRuns += 2
+//             runUpdate.textContent = `Scored 2`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 3 && randomAIrun < 4){
+//             sumOfAIRuns += 3
+//             runUpdate.textContent = `Scored 3`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 4 && randomAIrun < 6){
+//             runUpdate.textContent = `OUT`
+//         }else if(randomAIrun >= 6 && randomAIrun < 8){
+//             sumOfAIRuns += 5
+//             runUpdate.textContent = `Scored 5`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//             sumOfAIRuns += 6
+//             runUpdate.textContent = `Scored 6`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }
+
+//         setTimeout(() => {
+//             yourBox.setAttribute("src", "")
+//             AIBox.setAttribute("src", "")
+//             if(randomAIrun >= 4 && randomAIrun < 6){
+//                 runUpdate.textContent = `Innings Break...`
+//                 target.textContent = ` | Target : ${sumOfAIRuns+1}`
+//                 AIRun.style.display = 'none'
+//                 whoBat.textContent = `You`
+//                 firstSecond.textContent = `Second `
+//                 firstBat.textContent = `You`
+//                 firstBowl.textContent = `AI`
+//             }else{
+//                 runUpdate.textContent = `Next Ball...`
+//             }
+//         }, 3000);
+//     })
+//     btnFive.addEventListener("click", ()=>{
+//         yourBox.setAttribute("src", "five.png")
+//         randomAIrun = Math.floor(Math.random()*11)
+//         if(randomAIrun >= 0 && randomAIrun < 1){
+//             AIBox.setAttribute("src", "fist.png")
+//         }else if(randomAIrun >= 1 && randomAIrun < 2){
+//             AIBox.setAttribute("src", "one.png")
+//         }else if(randomAIrun >= 2 && randomAIrun < 3){
+//             AIBox.setAttribute("src", "two.png")
+//         }else if(randomAIrun >= 3 && randomAIrun < 4){
+//             AIBox.setAttribute("src", "three.png")
+//         }else if(randomAIrun >= 4 && randomAIrun < 6){
+//             AIBox.setAttribute("src", "four.png")
+//         }else if(randomAIrun >= 6 && randomAIrun < 8){
+//             AIBox.setAttribute("src", "five.png")
+//         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//             AIBox.setAttribute("src", "thumb.png")
+//         }
+
+//         if(randomAIrun >= 0 && randomAIrun < 1){
+//             sumOfAIRuns += 0
+//             runUpdate.textContent = `Scored 0`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 1 && randomAIrun < 2){
+//             sumOfAIRuns += 1
+//             runUpdate.textContent = `Scored 1`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 2 && randomAIrun < 3){
+//             sumOfAIRuns += 2
+//             runUpdate.textContent = `Scored 2`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 3 && randomAIrun < 4){
+//             sumOfAIRuns += 3
+//             runUpdate.textContent = `Scored 3`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 4 && randomAIrun < 6){
+//             sumOfAIRuns += 4
+//             runUpdate.textContent = `Scored 4`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 6 && randomAIrun < 8){
+//             runUpdate.textContent = `OUT`
+//         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//             sumOfAIRuns += 6
+//             runUpdate.textContent = `Scored 6`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }
+
+//         setTimeout(() => {
+//             yourBox.setAttribute("src", "")
+//             AIBox.setAttribute("src", "")
+//             if(randomAIrun >= 6 && randomAIrun < 8){
+//                 runUpdate.textContent = `Innings Break...`
+//                 target.textContent = ` | Target : ${sumOfAIRuns+1}`
+//                 AIRun.style.display = 'none'
+//                 whoBat.textContent = `You`
+//                 firstSecond.textContent = `Second `
+//                 firstBat.textContent = `You`
+//                 firstBowl.textContent = `AI`
+//             }else{
+//                 runUpdate.textContent = `Next Ball...`
+//             }
+//         }, 3000);
+//     })
+//     btnSix.addEventListener("click", ()=>{
+//         yourBox.setAttribute("src", "thumb.png")
+//         randomAIrun = Math.floor(Math.random()*11)
+//         if(randomAIrun >= 0 && randomAIrun < 1){
+//             AIBox.setAttribute("src", "fist.png")
+//         }else if(randomAIrun >= 1 && randomAIrun < 2){
+//             AIBox.setAttribute("src", "one.png")
+//         }else if(randomAIrun >= 2 && randomAIrun < 3){
+//             AIBox.setAttribute("src", "two.png")
+//         }else if(randomAIrun >= 3 && randomAIrun < 4){
+//             AIBox.setAttribute("src", "three.png")
+//         }else if(randomAIrun >= 4 && randomAIrun < 6){
+//             AIBox.setAttribute("src", "four.png")
+//         }else if(randomAIrun >= 6 && randomAIrun < 8){
+//             AIBox.setAttribute("src", "five.png")
+//         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//             AIBox.setAttribute("src", "thumb.png")
+//         }
+
+//         if(randomAIrun >= 0 && randomAIrun < 1){
+//             sumOfAIRuns += 0
+//             runUpdate.textContent = `Scored 0`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 1 && randomAIrun < 2){
+//             sumOfAIRuns += 1
+//             runUpdate.textContent = `Scored 1`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 2 && randomAIrun < 3){
+//             sumOfAIRuns += 2
+//             runUpdate.textContent = `Scored 2`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 3 && randomAIrun < 4){
+//             sumOfAIRuns += 3
+//             runUpdate.textContent = `Scored 3`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 4 && randomAIrun < 6){
+//             sumOfAIRuns += 4
+//             runUpdate.textContent = `Scored 4`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 6 && randomAIrun < 8){
+//             sumOfAIRuns += 5
+//             runUpdate.textContent = `Scored 5`
+//             AIRun.textContent = `${sumOfAIRuns}`
+//         }else if(randomAIrun >= 8 && randomAIrun <= 10){
+//             runUpdate.textContent = `OUT`
+//         }
+
+//         setTimeout(() => {
+//             yourBox.setAttribute("src", "")
+//             AIBox.setAttribute("src", "")
+//             if(randomAIrun >= 8 && randomAIrun <= 10){
+//                 runUpdate.textContent = `Innings Break...`
+//                 target.textContent = ` | Target : ${sumOfAIRuns+1}`
+//                 AIRun.style.display = 'none'
+//                 whoBat.textContent = `You`
+//                 firstSecond.textContent = `Second `
+//                 firstBat.textContent = `You`
+//                 firstBowl.textContent = `AI`
+//             }else{
+//                 runUpdate.textContent = `Next Ball...`
+//             }
+//         }, 3000);
+//     })
